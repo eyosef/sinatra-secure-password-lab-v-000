@@ -43,7 +43,7 @@ class ApplicationController < Sinatra::Base
       binding.pry
     if user.username.empty?
       redirect :failure
-    elsif user.password.empty?
+    elsif user.password_digest.empty?
       redirect :failure
     end
   end
