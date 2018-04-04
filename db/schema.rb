@@ -10,11 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20180404160805) do
 
   create_table "users", force: :cascade do |t|
     t.string "username"
     t.string "password_digest"
   end
+=======
+ActiveRecord::Schema.define(version: 0) do
+>>>>>>> 8130a530ffdbfc4ce6c8b6915671a7907a5d23c7
 
 end
