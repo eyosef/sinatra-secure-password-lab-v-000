@@ -44,6 +44,7 @@ class ApplicationController < Sinatra::Base
     if user.username.empty?
       redirect :failure
     elsif user.password.empty?
+      binding.pry
       redirect :failure
     end
   end
