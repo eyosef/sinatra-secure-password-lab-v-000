@@ -23,6 +23,7 @@ class ApplicationController < Sinatra::Base
       redirect "/failure"
     elsif !user.password
       redirect "/failure"
+      binding.pry
     else
       redirect "/login"
     end
