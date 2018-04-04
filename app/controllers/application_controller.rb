@@ -44,7 +44,7 @@ class ApplicationController < Sinatra::Base
 
     if user && user.authenticate(params[:password])
       redirect :failure
-    elsif user.password_digest.empty?
+    else
       redirect :failure
     end
   end
