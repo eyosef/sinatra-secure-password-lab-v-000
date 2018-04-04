@@ -43,7 +43,7 @@ class ApplicationController < Sinatra::Base
         binding.pry
 
     if user && user.authenticate(params[:password])
-      redirect :failure
+      redirect :success
     else
       redirect :failure
     end
