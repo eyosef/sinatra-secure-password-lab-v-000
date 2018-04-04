@@ -41,6 +41,7 @@ class ApplicationController < Sinatra::Base
   post "/login" do
     user = User.find_by(:username => params[:username])
     password = User.find_by(:password => params[:password])
+    binding.pry
 
     if user.username.empty?
       redirect :failure
