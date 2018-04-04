@@ -41,7 +41,7 @@ class ApplicationController < Sinatra::Base
   post "/login" do
     user = User.find_by(:username => params[:username])
 
-    if user.empty?
+    if user.username.empty?
   end
 
   get "/failure" do
