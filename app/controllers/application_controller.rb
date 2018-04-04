@@ -42,7 +42,7 @@ class ApplicationController < Sinatra::Base
     user = User.find_by(:username => params[:username])
 
     if user.username.empty?
-      redirect :failure 
+      redirect :failure
     end
   end
 
