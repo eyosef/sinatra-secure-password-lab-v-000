@@ -40,6 +40,7 @@ class ApplicationController < Sinatra::Base
 
   post "/login" do
     user = User.find_by(:username => params[:username])
+    password = User.find_by(:password => params[:username])
     binding.pry
     ##your code here
   end
